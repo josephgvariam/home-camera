@@ -15,5 +15,5 @@ printf "$DATE" >> cam.html
 printf " by $camip" >> cam.html
 printf '</p></body></html>' >> cam.html
 echo "Generated cam.html"
-curl -s -u $FTPUSER:$FTPPASSWD -T cam.html ftp://$FTPHOST
+curl -v -u $FTPUSER:$FTPPASSWD -T cam.html ftp://$FTPHOST
 echo "FTP Uploaded!"
